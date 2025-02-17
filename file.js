@@ -1,9 +1,9 @@
 const fs = require("fs");
 
-// synchronous call to write a file
+// synchronous call to write a file....Blocking
 fs.writeFileSync('./test.txt','Hey There');
 
-// Async
+// Async ....Non-Blocking Request
 fs.writeFile('./test2.txt','Hey There Async',(err)=>{})
 
 //Read file
